@@ -1,10 +1,19 @@
+export const CHAIN_NAME = 'gm-rollup';
+
 import { assets } from 'chain-registry';
 import { AssetList, Asset } from '@chain-registry/types';
 
-export const defaultChainName = 'gmrollup';
+import { chain } from "./chain"
+import { assetlist } from "./assetlist"
+
+export const defaultChainName = 'gm-rollup';
 
 export const getChainAssets = (chainName: string = defaultChainName) => {
-  return assets.find((chain) => chain.chain_name === chainName) as AssetList;
+  var vals = assets.find((chain) => chain.chain_name === chainName) as AssetList;
+  if (!vals) {
+	  vals = assetlist;
+  }
+  return vals;
 };
 
 export const getCoin = (chainName: string = defaultChainName) => {

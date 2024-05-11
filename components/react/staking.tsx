@@ -45,22 +45,8 @@ const convertChainName = (chainName: string) => {
   }
 
   switch (chainName) {
-    case 'cosmoshub':
-      return 'cosmos';
-    case 'assetmantle':
-      return 'asset-mantle';
-    case 'cryptoorgchain':
-      return 'crypto-org';
-    case 'dig':
-      return 'dig-chain';
-    case 'gravitybridge':
-      return 'gravity-bridge';
-    case 'kichain':
-      return 'ki-chain';
-    case 'oraichain':
-      return 'orai-chain';
-    case 'terra':
-      return 'terra-classic';
+    case 'gm-rollup':
+      return 'gm-rollup';
     default:
       return chainName;
   }
@@ -193,11 +179,6 @@ export const StakingSection = ({ chainName }: { chainName: ChainName }) => {
     setIsLoading(true);
 
     let rpcEndpoint = await getRpcEndpoint();
-
-    if (!rpcEndpoint) {
-      console.log('no rpc endpoint — using a fallback');
-      rpcEndpoint = `https://rpc.cosmos.directory/${chainName}`;
-    }
 
     // get RPC client
     const client = await cosmos.ClientFactory.createRPCQueryClient({

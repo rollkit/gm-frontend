@@ -35,9 +35,6 @@ import { ChainName } from '@cosmos-kit/core';
 
 const allowedChains = [
   'gmrollup',
-  'celestiatestnet',
-  'celestiatestnet2',
-  'celestiatestnet3',
 ];
 
 export const WalletSection = ({
@@ -133,7 +130,7 @@ export const WalletSection = ({
   );
 
   useEffect(() => {
-    setChainName?.(window.localStorage.getItem('selected-chain') || 'osmosis');
+    setChainName?.(window.localStorage.getItem('selected-chain'));
   }, [setChainName]);
 
   const onChainChange: handleSelectChainDropdown = async (
