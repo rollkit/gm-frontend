@@ -1,23 +1,18 @@
 export const assetlist = {
     "$schema": "../../assetlist.schema.json",
-    "chain_name": "gmrollup",
+    "chain_name": "gm-rollup",
+    "chain-id": "gm",
     "assets": [
       {
-        "description": "",
+        "description": "The native token of the gm rollup chain.",
         "denom_units": [
-            // is there also a ustake?
-          {
-            "denom": "ustake",
-            "exponent": 0
-          },
           {
             "denom": "stake",
             "exponent": 6
           }
         ],
-        // "base": "ustake", // is this correct instead of `stake`?
         "base": "stake",
-        "name": "GM rollup",
+        "name": "gm rollup token",
         "display": "stake",
         "symbol": "STAKE",
         "logo_URIs": {

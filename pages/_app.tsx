@@ -18,20 +18,22 @@ function CreateCosmosApp({ Component, pageProps }: AppProps) {
     // }
   };
 
+  const keplrAllowedWallets = [keplrWallets[0]];
+
   return (
     <ChakraProvider theme={defaultTheme}>
       <ChainProvider
-        chains={[...chains, chain]}
-        assetLists={[...assets, assetlist]}
-        wallets={[...keplrWallets, ...cosmostationWallets, ...leapWallets]}
+        chains={[chain]}
+        assetLists={[assetlist]}
+        wallets={[...keplrAllowedWallets, ...cosmostationWallets, ...leapWallets]}
         walletConnectOptions={{
           signClient: {
             projectId: 'a8510432ebb71e6948cfd6cde54b70f7',
             relayUrl: 'wss://relay.walletconnect.org',
             metadata: {
-              name: 'Celestia + Cosmos SDK',
-              description: 'Celestia + Cosmos SDK',
-              url: 'https://docs.celestia.org/',
+              name: "GM World Rollup",
+              description: "GM World App",
+              url: "https://rollkit.dev/tutorials/gm-world-frontend",
               icons: [],
             },
           },
