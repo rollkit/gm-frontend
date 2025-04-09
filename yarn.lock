@@ -1194,12 +1194,10 @@
   dependencies:
     "@babel/runtime" "^7.19.4"
 
-"@chain-registry/types@^0.15.0":
-  version "0.15.0"
-  resolved "https://registry.npmjs.org/@chain-registry/types/-/types-0.15.0.tgz"
-  integrity sha512-nUKNqEvWkGO0AqT2y3/H9qQ4yxXh5glvgPOOFAuvlaU0sSGnUB4lQjPDaVGmV4DUmEBx3oZ6D078cvwmtcdhAw==
-  dependencies:
-    "@babel/runtime" "^7.19.4"
+"@chain-registry/types@^0.50.110":
+  version "0.50.110"
+  resolved "https://registry.yarnpkg.com/@chain-registry/types/-/types-0.50.110.tgz#955da63ec375168357356cc5abd89dddbc72e205"
+  integrity sha512-CDikQf9fQ3bMeW79dMtrCKbXNO/oK0ckNWLV00cPsW+zHrzzxuwPNTfPSWcI/i8O5RGXFolrHwylirBaABqYSA==
 
 "@chain-registry/utils@^1.3.0":
   version "1.4.0"
@@ -4334,13 +4332,12 @@ chai@^4.3.7:
     pathval "^1.1.1"
     type-detect "^4.0.5"
 
-chain-registry@1.12.0, chain-registry@^1.5.0:
-  version "1.12.0"
-  resolved "https://registry.npmjs.org/chain-registry/-/chain-registry-1.12.0.tgz"
-  integrity sha512-+q5ber9dEZZYdycIvYtmrEyKN9vBBf20JvWqjN8CfdcIE+PDLMcj4PjJvNI+ImxXVhKLnPnzEXd0ynRtgbws+g==
+chain-registry@1.69.178, chain-registry@^1.5.0:
+  version "1.69.178"
+  resolved "https://registry.yarnpkg.com/chain-registry/-/chain-registry-1.69.178.tgz#50f680b87a5999979f4036c3e31bd4871f1673af"
+  integrity sha512-lSotqs7xcDFfd0tU0PkS4UOXO9JN/c8kwQm7dDjXvFvmT5F0GAHIzUkoKEthTBFZzX7enjvmUPegO3ITFrQZkw==
   dependencies:
-    "@babel/runtime" "^7.19.4"
-    "@chain-registry/types" "^0.15.0"
+    "@chain-registry/types" "^0.50.110"
 
 chakra-react-select@4.6.0, chakra-react-select@^4.4.2:
   version "4.6.0"
